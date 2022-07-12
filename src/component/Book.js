@@ -3,7 +3,7 @@ import useAxios from 'axios-hooks'
 
 const Book = () => {
   const [{ data, loading, error}] = useAxios(
-    `http://localhost:8080/api/sample/book`
+    `http://localhost:8080/api/library/book`
   )
   if (loading) return 'Loading...'
   if (error) return 'Error!'
