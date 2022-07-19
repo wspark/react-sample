@@ -10,19 +10,19 @@ function App() {
     <div>   
       <ul>
         <li>
-          <Link to="/api/sample/">Home</Link>
+          <Link to="/api/library/">Home</Link>
         </li>
         <li>
-          <Link to="/api/sample/book">Book</Link>          
+          <Link to="/api/library/book">Book</Link>          
         </li>
         <li>
-          <Link to="/api/sample/member">Member</Link>
+          <Link to="/api/library/member">Member</Link>
         </li>
       </ul>   
       <Routes>
-        <Route exact path="/api/sample" element={<Home/ >} />
-        <Route path="/api/sample/book" element={<Book/ >} />
-        <Route path="/api/sample/member" element={<Member/ >} />      
+        <Route exact path="/api/library" element={<Home/ >} />
+        <Route path="/api/library/book" element={<Book/ >} />
+        <Route path="/api/library/member" element={<Member/ >} />      
       </Routes>         
     </div>        
       
