@@ -3,7 +3,7 @@ import useAxios from 'axios-hooks'
 
 const Member = (match) => {
   const [{ data, loading, error}] = useAxios(
-    `http://localhost:8081/api/library/member/`
+    `http://openjdk-app-member-wspark-test2.apps.ocp4.local/api/library/member`
   )
   if (loading) return 'Loading...'
   if (error) return 'Error!'

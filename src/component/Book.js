@@ -3,7 +3,7 @@ import useAxios from 'axios-hooks'
 
 const Book = () => {
   const [{ data, loading, error}] = useAxios(
-    `http://localhost:8080/api/library/book`
+    `http://openjdk-app-wspark-test2.apps.ocp4.local/api/library/book`
   )
   if (loading) return 'Loading...'
   if (error) return 'Error!'
