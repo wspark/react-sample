@@ -3,7 +3,7 @@ import useAxios from 'axios-hooks'
 
 const Book = () => {
   const [{ data, loading, error}] = useAxios(
-    `http://springboot-demo-wspark-test.apps.ocp4.local/api/library/book`
+    `http://springboot-demo-book.wspark-test.svc.cluster.local:8080/api/library/book`
   )
   if (loading) return 'Loading...'
   if (error) return 'Error!'
