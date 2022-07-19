@@ -1,7 +1,7 @@
 import React from 'react';
 import useAxios from 'axios-hooks'
 
-const Member = (match) => {
+const Member = () => {
   const [{ data, loading, error}] = useAxios(
     `http://springboot-demo-wspark-test.apps.ocp4.local/api/library/member`
   )
